@@ -1681,6 +1681,55 @@ pre code {
     margin-left: 91.6666666667%;
   }
 }
+
+.hidden{
+  display: none;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sendEmailBtn{
+  background-color: #64a19d !important;
+  padding: 0.5rem 0.5rem !important;
+}
+
+.sendemail{
+  padding-left: 35%;
+}
+
+#sendemail {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  max-width: inherit;
+}
+
+/* Modal Content/Box */
+#sendemailContent {
+  background-color: #000000;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
 .table {
   width: 100%;
   margin-bottom: 1rem;
@@ -2394,7 +2443,7 @@ textarea.form-control {
 
 .form-inline {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
 }
 .form-inline .form-check {
@@ -2416,7 +2465,7 @@ textarea.form-control {
   }
   .form-inline .form-control {
     display: inline-block;
-    width: auto;
+    width: 50%;
     vertical-align: middle;
   }
   .form-inline .form-control-plaintext {
@@ -4072,17 +4121,25 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
 }
+
+@font-face {
+  font-family: fascinate;
+  src: url("Fascinate_Inline/FascinateInline-Regular.ttf");
+}
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  font-family:fascinate;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-right: 0.5rem;
+  font-size: 3.5rem;
   line-height: inherit;
   white-space: nowrap;
+  opacity: 0.8;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+  opacity: 1;
 }
 
 .navbar-nav {
@@ -10273,7 +10330,7 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 1rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -10366,3 +10423,4 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
