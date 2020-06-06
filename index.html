@@ -24,6 +24,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -34,7 +35,7 @@
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Nethra Mugala</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Software Developer</h2>
+                    <h2 class="text-white mx-auto mt-2 mb-5">Software Developer</h2>
                     <!--<a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>-->
                 </div>
             </div>
@@ -45,7 +46,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4"><a class="mx-2" href="#!"><i class="fab fa-linkedin"></i></a>About Me</h2>
-                        <p class="text-white-50"></p>
+                        <p class="text-white-50"> Experienced in building intuitive and interactive progressive full stack applications. Strong communication, collaboration & team building skills with proficiency in grasping new technical concepts quickly.</p>
                     </div>
                 </div>
             </div>
@@ -53,13 +54,21 @@
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2 class="text-black mb-4"><a class="mx-2" href="#!"><i class="fab fa-github"></i></a>Projects</h2>
+                  <p class="text-white-50"></p>
+                </div>
+              </div>
                 <!-- Featured Project Row-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <h4>Online Shopping</h4>
+                            <p class="text-black-50 mb-0">User will be able to sign in and add the items to cart adn continue the shopping process.</p>
+                            <button class="btn gitBtn">Demo</button>
+                            <button class="btn gitBtn">Source Code</button>
                         </div>
                     </div>
                 </div>
@@ -70,8 +79,10 @@
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <h4 class="text-white">Restaurant Page</h4>
+                                    <p class="mb-0 text-white-50">Created a sample restaurant page</p>
+                                    <button class="btn gitBtn">Demo</button>
+                                    <button class="btn gitBtn">Source Code</button>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
                             </div>
@@ -87,6 +98,8 @@
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Mountains</h4>
                                     <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <button class="btn gitBtn">Demo</button>
+                                    <button class="btn gitBtn">Source Code</button>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
                                 </div>
                             </div>
@@ -96,8 +109,8 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black" >
-            <div class="container" id="contact">
+        <section class="contact-section bg-black" id="contact">
+            <div class="container" >
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
@@ -144,8 +157,10 @@
                 <h2 class="text-white mb-5">Contact me!</h2>
                 <form class="form-inline d-flex">
                   <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter your name" />
+                  <span id="errorEmail"></span>
                   <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputSubject" type="text" placeholder="Please enter the subject" />
-                  <button class="btn btn-primary mx-auto" type="submit">Send</button></form>
+                  <span id="errorSubject"></span>
+                  <button class="btn btn-primary mx-auto" type="submit" id="sendEmailBtn2">Send</button></form>
               </div>
             </div>
           </div>
