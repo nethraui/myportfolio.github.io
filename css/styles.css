@@ -10076,7 +10076,8 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 1.5rem;
 }
 
 .text-hide {
@@ -10337,7 +10338,8 @@ body {
 }
 
 .about-section {
-  padding-top: 1rem;
+  height: 100vh;
+  padding-top: 5rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
@@ -10345,7 +10347,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
