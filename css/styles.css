@@ -10077,7 +10077,6 @@ a.text-black:hover, a.text-black:focus {
 
 .text-white-50 {
   color: rgba(255, 255, 255, 0.8) !important;
-  font-size: 1.5rem;
 }
 
 .text-hide {
@@ -10338,7 +10337,6 @@ body {
 }
 
 .about-section {
-  height: 100vh;
   padding-top: 5rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
